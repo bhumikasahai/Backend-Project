@@ -5,4 +5,24 @@ const postSchema = new mongoose.Schema({
     caption : String,
 })
 
-const postModel = mongoose.model("post", postSchema)
+const postModel = mongoose.model("post", postSchema) 
+
+
+
+/*
+
+post = {
+image:String,
+caption:String
+}
+
+user = {
+name:string,
+email:string,
+password:string,
+posts:[post1,post2,post3]
+}
+
+*/
+
+module.exports = postModel;
